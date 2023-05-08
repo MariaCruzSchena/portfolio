@@ -1,0 +1,27 @@
+@import "../../../styles/maps";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+
+.contactContainer{
+    padding-left: 3rem;
+    margin: 5rem 0;
+}
+
+.contactTitle{
+    font-family: Proxima;
+    font-size: 4rem;
+    //letter-spacing: -0.3rem;
+    text-transform: uppercase;
+    line-height: 8rem;
+    color: $color-main-white;
+    margin-bottom: -1rem;
+}
+
+.contactMail{
+    font-family: ApercuLight;
+    font-size: 2rem;          
+    color: $color-main-white;
+    margin-bottom: -1rem;
+    text-decoration: underline;
+}

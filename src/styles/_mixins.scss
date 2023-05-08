@@ -1,0 +1,34 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin devices($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 520px) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 1025px) {
+      @content;
+    }
+  }
+  @if $breakpoint == largeScreens {
+    @media only screen and (min-width: 1300px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xlScreens {
+    @media only screen and (min-width: 1500px) {
+      @content;
+    }
+  }
+}

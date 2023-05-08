@@ -1,0 +1,51 @@
+@import "../../../styles/maps";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.stackContainer {
+  margin-top: 5rem;
+  padding: 0 5rem 0 3rem;
+}
+
+.stackTitle {
+  font-family: Proxima;
+  font-size: 4rem;
+  //letter-spacing: -0.3rem;
+  text-transform: uppercase;
+  line-height: 8rem;
+  color: $color-main-white;
+  margin-bottom: 1rem;
+}
+
+.stackGrid {
+  @include flex(row, flex-start, center);
+  flex-wrap: wrap;
+}
+.stackWrapper {
+  width: 10%;
+  margin: 1rem;
+  @include flex(column, space-between, center);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.stackIcon {
+  width: 3rem;
+  height: 3rem;
+  color: $color-primary;
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.stackName {
+  font-family: ApercuLight;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: $color-main-white;
+  margin-bottom: 1.5rem;
+  &:hover {
+    color: $color-secondary;
+  }
+}

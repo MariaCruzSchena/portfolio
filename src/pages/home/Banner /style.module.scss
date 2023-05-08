@@ -1,0 +1,37 @@
+@import "../../../styles/maps";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bannerContainer {
+  height: 100vh;
+  width: 100%;
+  padding-left: 3rem;
+  @include flex(column, center, flex-start); 
+}
+
+.bannerWrapper {
+  @include flex(row, space-evenly, center);
+}
+.bannerTitle {
+  font-family: Proxima;
+  font-size: 8rem;
+  //letter-spacing: -0.3rem;
+  text-transform: uppercase;
+  line-height: 8rem;
+  color: $color-main-white;
+  margin-bottom: -1rem;
+}
+
+.bannerSubtitle {
+  font-family: Dhalia;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+  color: $color-main-white;
+  margin-top: 1rem;
+}

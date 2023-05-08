@@ -1,0 +1,47 @@
+@import "../../../styles/maps";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.aboutContiner {
+  @include flex(row, space-between, center);
+  height: 100vh;
+  padding: 0 6rem;
+}
+
+.aboutImg {
+  height: 80vh;
+  border-radius: 100%;
+  margin-right: 2rem;
+  padding-left: 3rem;
+  opacity: 80%;
+}
+
+.aboutWrapper {
+  @include flex(column, space-between, flex-start);
+  padding: 0 3rem;
+}
+
+.aboutTitle {
+  font-family: Proxima;
+  font-size: 4rem;
+  //letter-spacing: -0.3rem;
+  text-transform: uppercase;
+  line-height: 8rem;
+  color: $color-main-white;
+  margin-bottom: -1rem;
+  
+  // font-family: Dhalia;
+  // font-size: 5rem;  
+  // letter-spacing: 0.2rem; 
+  // color: $color-main-white;
+  // margin-bottom: 2rem;
+  // text-transform: uppercase;
+
+}
+
+.aboutContent {
+  font-family: ApercuLight;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: $color-main-white;
+}

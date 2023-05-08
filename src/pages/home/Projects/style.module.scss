@@ -1,0 +1,83 @@
+@import "../../../styles/maps";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.projectContainer {
+  margin-top: 10rem;
+  padding: 0 5rem 0 3rem;
+}
+
+.projectTitle {
+  font-family: Proxima;
+  font-size: 4rem;
+  //letter-spacing: -0.3rem;
+  text-transform: uppercase;
+  line-height: 8rem;
+  color: $color-main-white;
+  margin-bottom: -1rem;
+
+
+  // font-family: Dhalia;
+  // font-size: 5rem;
+  // font-weight: 200;
+  // color: $color-main-white;
+  // text-transform: uppercase;
+  // margin-bottom: 2rem;
+}
+
+.projectsubTitle{
+  font-family: ApercuLight;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: $color-main-white;
+  margin-bottom: 1.5rem;
+}
+.projectGrid {
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+}
+.projectCardContainer {
+  width: 33%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  filter: grayscale(1);
+  transition-duration: 0.5s;
+  &:hover {
+    filter: grayscale(0);
+  }
+  &:hover .projectButton {
+    transition-duration: 0.5s;
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    border: none;
+    border-radius: 1.5rem;
+    width: 50%;
+    padding: 0.5rem;
+    background-color: $color-primary;
+    font-family: Proxima;
+    font-size: 1.2rem;
+    color: $color-main-black;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  .projectButton {
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
+  button {
+    display: none;
+  }
+}

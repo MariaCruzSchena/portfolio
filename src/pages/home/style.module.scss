@@ -1,0 +1,11 @@
+@import "../../styles/maps";
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.homeContainer{
+    @include flex(row-reverse, space-between, center)
+}
+
+.homeContent{
+    width: 100%;
+}
