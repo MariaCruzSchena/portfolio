@@ -14,21 +14,21 @@ import gwc from "../assets/images/gwcPres.png";
 import gwcLogo from "../assets/images/girlswhocode.jpg";
 
 export const projects = [
-  {
-    id: 1,
-    name: "FUNKO STORE",
-    type: "E-commerce",
-    time: "Apr 2023",
-    hours: "40 hours",
-    devs: "solo project",
-    description: `Funko pop e-commerce that currently does not have functionality.It's being developed as a solo project.`,
-    technologies: { back: `-`, front: `React, Redux and Sass.` },
-    link: "https://cruce-ecommerce.vercel.app",
-    github: "https://github.com/MariaCruzSchena/Cruce-Ecommerce-",
-    img: funko,
+  // {
+  //   id: 1,
+  //   name: "FUNKO STORE",
+  //   type: "E-commerce",
+  //   time: "Apr 2023",
+  //   hours: "40 hours",
+  //   devs: "solo project",
+  //   description: `Funko pop e-commerce that currently does not have functionality.It's being developed as a solo project.`,
+  //   technologies: { back: `-`, front: `React, Redux and Sass.` },
+  //   link: "https://cruce-ecommerce.vercel.app",
+  //   github: "https://github.com/MariaCruzSchena/Cruce-Ecommerce-",
+  //   img: funko,
 
-    logo: funkoLogo,
-  },
+  //   logo: funkoLogo,
+  // },
   {
     id: 2,
     name: "BROKEN OFFICE-GLOBANT",
