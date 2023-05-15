@@ -23,8 +23,12 @@
 }
 .stackWrapper {
   width: 10%;
+  height: 8rem;
   margin: 1rem;
-  @include flex(column, space-between, center);
+  //background-color: rgba(56, 51, 51, 0.209);
+  //padding: 1rem 0 0 0;
+  border-radius: 1rem;
+  @include flex(column, center, center);
   &:hover {
     cursor: pointer;
   }
@@ -34,9 +38,9 @@
   width: 3rem;
   height: 3rem;
   color: $color-primary;
-  &:hover {
-    color: $color-secondary;
-  }
+  // &:hover {
+  //   color: $color-secondary;
+  // }
 }
 
 .stackName {
@@ -45,7 +49,8 @@
   line-height: 2rem;
   color: $color-main-white;
   margin-bottom: 1.5rem;
-  &:hover {
-    color: $color-secondary;
-  }
+  text-align: center;
+  // &:hover {
+  //   color: $color-secondary;
+  // }
 }
