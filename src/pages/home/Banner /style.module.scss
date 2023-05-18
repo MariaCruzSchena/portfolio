@@ -10,28 +10,55 @@
 .bannerContainer {
   height: 100vh;
   width: 100%;
-  padding-left: 3rem;
-  @include flex(column, center, flex-start); 
+  padding: 1rem 20% 0 1rem;
+  @include flex(column, center, flex-start);
+  @include devices(tablet) {
+    width: 100%;
+    padding: 1rem 15% 0 2rem;
+  }
+  @include devices(desktop) {
+    width: 100%;
+    padding-left: 3rem;
+  }
 }
 
 .bannerWrapper {
   @include flex(row, space-evenly, center);
 }
+
 .bannerTitle {
-  font-family: Proxima;
-  font-size: 8rem;
-  //letter-spacing: -0.3rem;
+  font-family: Apercu;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  line-height: 8rem;
+  line-height: 2.5rem;
   color: $color-main-white;
-  margin-bottom: -1rem;
+  margin-bottom: 0.5rem;
+  @include devices(tablet) {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.3rem;
+    margin-bottom: 1rem;
+  }
+  @include devices(desktop) {
+    font-size: 8rem;
+    line-height: 8rem;
+    letter-spacing: -0.3rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .bannerSubtitle {
   font-family: Dhalia;
-  font-size: 5rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   font-weight: 200;
   color: $color-main-white;
-  margin-top: 1rem;
+  @include devices(tablet) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  @include devices(desktop) {
+    font-size: 5rem;
+    margin-top: 1rem;
+  }
 }

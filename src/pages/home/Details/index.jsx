@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 const Details = () => {
   const { id } = useParams();
   const project = projects.find((project) => project.id === Number(id));
-  console.log(project);
+  
   return (
     <div className={css.detailsContainer}>
       <div className={css.detailsCWrapperLeft}>

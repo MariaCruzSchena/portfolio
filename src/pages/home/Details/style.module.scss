@@ -4,13 +4,25 @@
 
 .detailsContainer {
   background-color: $color-main-black;
-  @include flex(column, space-evenly, center);
-  padding: 5rem;
+  @include flex(column, space-evenly, flex-start);
+  padding: 1rem;
+  width: 100%;
+  padding-right: 20%;
+  @include devices(tablet) {    
+    padding: 2rem 15% 2rem 2rem;    
+  }
+  @include devices(desktop) {  
+    padding: 5rem;    
+  }
 }
 
 .detailsCWrapperLeft {
-  width: 50%;
+  width: 100%;
   margin-bottom: 1rem;
+  @include devices(desktop) {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .detailsImg {
@@ -19,11 +31,18 @@
 
 .detailsLink {
   color: $color-main-white;
-  width: 2rem;
-  height: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
   &:hover {
-    
     cursor: pointer;
+  }
+  @include devices(tablet) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @include devices(desktop) {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
@@ -31,63 +50,96 @@
   display: none;
 }
 .detailsIcon {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .5rem;
   transition-duration: 0.5s;
 
   &:hover {
     transform: scale(1.3);
     cursor: pointer;
   }
+  @include devices(tablet) {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.2rem;
+  }
+  @include devices(desktop) {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
 }
 
-.detailsStackWrapper {
-}
 
 .detailStack {
   font-family: ApercuMedium;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 200;
   color: $color-main-white;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  @include devices(tablet) {
+    font-size: 1.2rem;
+  }
 }
+
 span {
   font-family: ApercuLight;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   text-transform: none;
+  @include devices(tablet) {
+    font-size: 1.2rem;
+  }
 }
 
 .detailsWrapperRight {
-  width: 50%;
+  width: 100%;
   padding-top: 1rem;
+  @include devices(desktop) {
+    width: 50%; 
+    margin: 0 auto;
+  }
 }
 
 .detailTitle {
   font-family: Apercu;
   letter-spacing: -0.1rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: $color-main-white;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
+  @include devices(tablet) {
+    font-size: 2rem;
+  }
+  @include devices(desktop) {
+    font-size: 3rem;
+  }
 }
 
 .detailData {
   font-family: ApercuMedium;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 200;
   color: $color-main-white;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem; 
+  @include devices(tablet) {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .detailDescription {
   font-family: ApercuLight;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 200;
   color: $color-main-white;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  @include devices(tablet) {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }

@@ -20,97 +20,107 @@ import { TbBrandNextjs, TbGitMerge } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const Stack = () => {
+  const variants = {
+    offscreen: { y: 100, opacity: 0 },
+    onscreen: { y: 0, opacity: 1, transition: { type: "spring", duration: 3 } },
+  };
   return (
-    <div class={css.stackContainer}>
-      <p class={css.stackTitle}>My stack</p>
+    <motion.div
+      class={css.stackContainer}
+      variants={variants}
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <p class={css.stackTitle}>Skills</p>
       <div class={css.stackGrid}>
-        <motion.div class={css.stackWrapper}   whileHover={{scale: 0.9}}  >
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <ImHtmlFive class={css.stackIcon} />{" "}
           <span class={css.stackName}>HTML</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <ImCss3 class={css.stackIcon} />{" "}
           <span class={css.stackName}>CSS</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <IoLogoSass class={css.stackIcon} />{" "}
           <span class={css.stackName}>Sass</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <IoLogoJavascript class={css.stackIcon} />{" "}
           <span class={css.stackName}>Javascript</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiTypescript class={css.stackIcon} />{" "}
           <span class={css.stackName}>Typescript</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <IoLogoReact class={css.stackIcon} />{" "}
           <span class={css.stackName}>React</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <TbBrandNextjs class={css.stackIcon} />{" "}
           <span class={css.stackName}>Next js</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <span class={css.stackName}>Material UI</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <span class={css.stackName}>Semantic UI</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiBootstrap class={css.stackIcon} />{" "}
           <span class={css.stackName}>Bootstrap</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiTailwindcss class={css.stackIcon} />{" "}
           <span class={css.stackName}>Tailwind</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiNodedotjs class={css.stackIcon} />{" "}
           <span class={css.stackName}>Node.js</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiExpress class={css.stackIcon} />{" "}
           <span class={css.stackName}>Express.js</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiSequelize class={css.stackIcon} />{" "}
           <span class={css.stackName}>Sequelize</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiMongodb class={css.stackIcon} />{" "}
           <span class={css.stackName}>Mongo DB</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <span class={css.stackName}>Mongoose</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiSocketdotio class={css.stackIcon} />{" "}
           <span class={css.stackName}>Socket.io</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <TbGitMerge class={css.stackIcon} />{" "}
           <span class={css.stackName}>Git</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiGithub class={css.stackIcon} />{" "}
           <span class={css.stackName}>Github</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiDocker class={css.stackIcon} />{" "}
           <span class={css.stackName}>Docker</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiLinux class={css.stackIcon} />{" "}
           <span class={css.stackName}>Linux</span>
         </motion.div>
-        <motion.div class={css.stackWrapper} whileHover={{scale: 0.9}}>
+        <motion.div class={css.stackWrapper} whileHover={{ scale: 0.9 }}>
           <SiScrumalliance class={css.stackIcon} />{" "}
           <span class={css.stackName}>SCRUM</span>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

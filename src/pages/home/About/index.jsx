@@ -2,6 +2,7 @@ import React from "react";
 import me from "../../../assets/images/me.JPG";
 import css from "./style.module.scss";
 import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const About = () => {
   const aboutVariants = {
@@ -31,7 +32,11 @@ const About = () => {
           teams to create innovative solutions that meet the client's needs and
           have a positive impact on the industry.
         </p>
+        <AnchorLink href="#contact">
+        <button className={css.aboutBtn}>Contact</button>
+        </AnchorLink>
       </div>
+      
     </motion.div>
   );
 };

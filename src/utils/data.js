@@ -12,10 +12,29 @@ import dlc from "../assets/images/dlcPres.png";
 import dlcLogo from "../assets/images/delacruz.jpg";
 import gwc from "../assets/images/gwcPres.png";
 import gwcLogo from "../assets/images/girlswhocode.jpg";
+import promptifyLogo from "../assets/images/promptifyLogo.png";
+import promptify from "../assets/images/promptify.png";
 
 export const projects = [
   {
-    id: 1,
+    id: 8,
+    name: "PROMPTIFY",
+    type: "Website",
+    time: "May 2023",
+    hours: "20 hours",
+    devs: "solo project",
+    description: `Platform that allows users to discover, create, and share creative AI prompts.`,
+    technologies: {
+      back: `MongoDB, MongoDB Atlas, Mongoose, Next.js`,
+      front: `Next.js, Tailwind, CSS.`,
+    },
+    link: "https://promptify-six.vercel.app",
+    github: "https://github.com/MariaCruzSchena/Promptify",
+    img: promptify,
+    logo: promptifyLogo,
+  },
+  {
+    id: 7,
     name: "FUNKO STORE",
     type: "E-commerce",
     time: "Apr 2023",
@@ -26,11 +45,10 @@ export const projects = [
     link: "https://cruce-ecommerce.vercel.app",
     github: "https://github.com/MariaCruzSchena/Cruce-Ecommerce-",
     img: funko,
-
     logo: funkoLogo,
   },
   {
-    id: 2,
+    id: 6,
     name: "BROKEN OFFICE-GLOBANT",
     type: "Globant app",
     time: "Mar 2023 - Apr 2023",
@@ -47,7 +65,7 @@ export const projects = [
     logo: globantLogo,
   },
   {
-    id: 3,
+    id: 5,
     name: "DEVGAMES3",
     type: "E-commerce",
     time: "Mar 2023",
@@ -81,7 +99,7 @@ export const projects = [
     logo: tmdbLogo,
   },
   {
-    id: 5,
+    id: 3,
     name: "THE WAVE SEARCHERS",
     type: "E-commerce",
     time: "Ago 2022 - Oct 2022",
@@ -89,9 +107,8 @@ export const projects = [
     devs: "solo project",
     description: `Surfboard e-commerce website. It was developed as an individual project to test my React skills during the Frontend career program I enrolled in at CODERHOUSE.`,
     technologies: {
-      back: "-",
-      front: `Frontend: React and CSS. Backend: the database was hosted
-    on Firebase.`,
+      back: "Firebase",
+      front: `React and CSS`,
     },
     link: "the-wave-searchers.vercel.app/",
     github: "https://github.com/MariaCruzSchena/The-Wave-Searchers",
@@ -99,7 +116,7 @@ export const projects = [
     logo: twsLogo,
   },
   {
-    id: 6,
+    id: 2,
     name: "DE LA CRUZ",
     type: "E-commerce",
     time: "Jun 2022 - Jul 2022",
@@ -113,7 +130,7 @@ export const projects = [
     logo: dlcLogo,
   },
   {
-    id: 7,
+    id: 1,
     name: "GIRLS WHO CODE",
     type: "Website",
     time: "Mar 2022 - May 2022",

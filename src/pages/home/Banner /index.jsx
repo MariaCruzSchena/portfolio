@@ -4,15 +4,16 @@ import { motion } from "framer-motion";
 import Typed from "typed.js";
 
 const Banner = () => {
-  const firstLine = ["h","e", "y",",", " ", "I"," ", "a", "m"];
-  const secondLine = ["C", "r", "u", "z", " ", "S", "c", "h", "e", "n", "a"];
+  const firstLine = ["h","i", ",", " ", "I","'","m"];
+  const secondLine = ["C", "r", "u", "z", " ", "S", "c", "h", "e", "n", "a","."];
   const textRef = useRef(null);
 
 useEffect(() => {
   const options = {
     strings: ["I'm a Full Stack Developer.", 'Welcome to my portfolio!'],
     typeSpeed: 90,
-    backSpeed: 60,
+    backDelay: 900,
+    backSpeed: 60,    
     loop: true,
   };
 

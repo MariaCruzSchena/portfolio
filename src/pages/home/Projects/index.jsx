@@ -5,7 +5,6 @@ import { projects } from "../../../utils/data.js";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-
 const Projects = () => {
   const navigate = useNavigate();
   const variants = {
@@ -13,35 +12,40 @@ const Projects = () => {
     onscreen: { y: 0, opacity: 1, transition: { type: "spring", duration: 3 } },
   };
   return (
-    <div className={css.projectContainer}>
+    <motion.div
+      className={css.projectContainer}
+      variants={variants}
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <p className={css.projectTitle}>Selected work</p>
-      <p className={css.projectsubTitle}>A selection of the projects I've worked on alone and in collaboration with talented individuals. Each project represents a unique challenge that has allowed me to hone my skills and grow as a developer.      
-    </p>
+      <p className={css.projectsubTitle}>
+        A selection of the projects I've worked on alone and in collaboration
+        with talented individuals. Each project represents a unique challenge
+        that has allowed me to hone my skills and grow as a developer.
+      </p>
       <div className={css.projectGrid}>
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <>
             <motion.div
               className={css.projectCardContainer}
               key={project.id}
-              variants={variants}
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              viewport={{ once: true, amount: 0.3 }}
-              whileHover={{scale: 0.9}}             
+              whileHover={{ scale: 0.9 }}
             >
-              <motion.img src={project.logo} alt="logo"  />
+              <motion.img src={project.logo} alt="logo" />
               <motion.button
                 onClick={() => navigate(`/project/${project.id}`)}
                 whileTap={{ scale: 0.9 }}
                 className={css.projectButton}
               >
                 Details
-              </motion.button>           
+              </motion.button>
             </motion.div>
           </>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
